@@ -1,0 +1,6 @@
+.row
+  .col-md-12
+    = form_for @person, url: wizard_path, method: :patch, html: {id:'person_form', class: 'form-horizontal dropzone'} do |f|
+      .form-group
+        .col-sm-5.col-sm-offset-2
+          = f.file_field :photo, style: 'display: none'

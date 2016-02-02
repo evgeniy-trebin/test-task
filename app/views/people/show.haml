@@ -1,0 +1,30 @@
+.row
+  .col-md-12
+    %table.table.table-striped.table-bordered
+      %thead
+        %tr
+          %td
+            Attribute
+          %td
+            Value
+      %tbody
+        %tr
+          %td
+            Name
+          %td
+            = @person.name
+        %tr
+          %td
+            Surname
+          %td
+            = @person.surname
+        %tr
+          %td
+            Sex
+          %td
+            = @person.sex_text
+        %tr
+          %td
+            Photo
+          %td
+            = image_tag @person.photo_url
